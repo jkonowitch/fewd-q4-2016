@@ -1,7 +1,18 @@
-h1 {
-  color: red;
+div {
+  width: 200px;
+  border: 1px dashed black;
 }
 
+h1 {
+  border: 1px solid black;
+  padding: 0px;
+  margin-bottom: 50px;
+  height: 100px;
+}
+
+h2 {
+  border: 1px solid black;
+}
 .big-text {
   font-size: 24px;
 }
