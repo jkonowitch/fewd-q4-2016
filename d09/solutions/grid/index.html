@@ -43,8 +43,22 @@
     g.fill(2, 3, "color red");
 
     // ask the user for a color, and fill in 5, 9
-    colorFromTheUser = prompt("What color do you want?");
-    g.fill(5, 9, "color " + colorFromTheUser);
+    // var colorFromTheUser = prompt("What color do you want?");
+
+    // var xAsString = prompt("What x coordinate do you want?");
+    // var xAsNumber = parseInt(xAsString);
+
+    // var yAsString = prompt("What y coordinate do you want?");
+    // var yAsNumber = parseInt(yAsString);
+
+    // g.fill(xAsNumber, yAsNumber, "color " + colorFromTheUser);
+
+    var userResponse = prompt("Do you want to fill in another square?");
+
+    if ( userResponse === "yes" ) {
+      g.fill(5, 9, "color orange");
+    }
+
   </script>
 
 </body>
