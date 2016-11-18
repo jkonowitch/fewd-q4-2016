@@ -26,4 +26,5 @@ In `bonus-solution.js` write a new program that moves the dwarf through the maze
 HINT: `g.at(x, y)` will tell you if there is an obstacle at the coordinate you specify...
 
 `d.orientation`
-
+`d.x`
+`d.y`
