@@ -1,14 +1,14 @@
 console.log("is this working?");
 
 $("a#color-button").on("click", function() {
-  var red = $("input#red").val();
+  var red = Math.random() * 255
   console.log(red);
-  var green = $("input#green").val();
+  var green = Math.random() * 255
   console.log(green);
-  var blue = $("input#blue").val();
+  var blue = Math.random() * 255;
   console.log(blue);
 
-  var rgb = "rgb(" + red + "," + green + "," + blue + ")";
+  var rgb = "rgb(" + Math.round(red) + "," + Math.round(green) + "," + Math.round(blue) + ")";
   console.log(rgb);
 
   $("#wrapper").css("background-color", rgb);
