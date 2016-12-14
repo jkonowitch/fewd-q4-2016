@@ -20,25 +20,28 @@ var trip = [
   }
 ];
 
+var combineWithComma = function(wordOne, wordTwo) {
+  return wordTwo + ", " + wordOne;
+}
+
+var changeStop = function(number) {
+  var city = trip[number]["city"];
+  var country = trip[number]["country"];
+  var combined = combineWithComma(city, country);
+  $("h1").text(combined);
+  $("img").attr("src", trip[number]["photo"]);
+}
+
 $("button#first").on("click", function() {
-  var city = trip[0]["city"];
-  var country = trip[0]["country"];
-  $("h1").text(city + ", " + country);
-  $("img").attr("src", trip[0]["photo"]);
+  changeStop(0);
 });
 
 $("button#second").on("click", function() {
-  var city = trip[1]["city"];
-  var country = trip[1]["country"];
-  $("h1").text(city + ", " + country);
-  $("img").attr("src", trip[1]["photo"]);
+  changeStop(1);
 });
 
 $("button#third").on("click", function() {
-  var city = trip[2]["city"];
-  var country = trip[2]["country"];
-  $("h1").text(city + ", " + country);
-  $("img").attr("src", trip[2]["photo"]);
+  changeStop(2);
 });
 
 
